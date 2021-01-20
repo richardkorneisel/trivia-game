@@ -1,0 +1,44 @@
+* {
+    width: 760px;
+    margin: 0 auto;
+    color: black;
+}
+body {
+    background-image:url('/images/farm.jpg');
+    background-position: cover cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: skyblue;
+}
+
+img {
+    display: flex; 
+    align-items: center;
+    width: 60%;
+    height: auto;
+    border: 5px solid green;
+    border-radius: 20px;
+}
+.answers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30%;
+    /* justify-content: space-between; */
+    /* grid-template: repeat(2, 1fr) / repeat(2, 1fr); */
+}
+
+.questions {
+    font-size: 30px;
+}
+
+.resultsPage {
+    font-size: 30px;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
