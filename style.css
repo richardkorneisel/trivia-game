@@ -1,3 +1,20 @@
+/* Starting Screen - Hides other pages in HTML */
+/* .question1, .resultsPage{
+    display:none;
+} */
+
+
+
+/* .titlePage {display:none} */
+/* .titlePage:target {display:block} */
+/* .question1 {display:none} */
+/* .question1:target {display:block} */
+/* .resultsPage {display:none} */
+/* .resultsPage:target {display:block} */
+
+
+
+
 * {
     width: 760px;
     margin: 0 auto;
@@ -38,7 +55,87 @@ img {
 }
 h1 {
     text-align: center;
+    font-family: 'Alfa Slab One', cursive;
+    color: green;
+    font-size: 100px;
+
 }
 h2 {
     text-align: center;
 }
+ 
+.startGame {
+    display:inline-block;
+    padding:0.3em 1.2em;
+    margin:0 0.3em 0.3em 0;
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    background-color:#4eb5f1;
+    text-align:center;
+    transition: all 0.2s;
+}
+
+.startGame:hover {
+    background-color: orange;
+}
+
+@media all and (max-width:30em){
+    .start {
+    display:block;
+    margin:0.2em auto;
+    } 
+} 
+.button {
+    display:inline-block;
+    padding:0.3em 1.2em;
+    margin:0 0.3em 0.3em 0;
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    background-color:#4eb5f1;
+    text-align:center;
+    transition: all 0.2s;
+}
+
+.button:hover {
+    background-color: orange;
+}
+
+@media all and (max-width:30em){
+    .button {
+    display:block;
+    margin:0.2em auto;
+    } 
+} 
+.playAgain {
+    display:inline-block;
+    padding:0.3em 1.2em;
+    margin:0 0.3em 0.3em 0;
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    background-color:#4eb5f1;
+    text-align:center;
+    transition: all 0.2s;
+}
+
+.playAgain:hover {
+    background-color: orange;
+}
+
+@media all and (max-width:30em){
+    .playAgain {
+    display:block;
+    margin:0.2em auto;
+    } 
+} 

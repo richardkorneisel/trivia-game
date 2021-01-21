@@ -5,26 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trivia Game</title>
     <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <div class="titlePage">
-        <h1>Farm Trivia</h1>
+        <h1>ANIMAL TRIVIA</h1>
         <h2>Do you know your farm animals?</h2>
         <h2>Take this quiz and find out</h2>
         <h2>Press the Start button to begin</h2>
 
-        <button id='start' name="Start">Start</button>
+        <!-- <div class = "startGame">Start Game</div> -->
+        <button class="startGame">Start Game</button>
     </div>
     <div class = "questions">
         <div class = "question1">
-            <img src="/images/pig.jpg" alt = "Sample Elephant Pic">
+            <img src="/images/pig.jpg" alt = "pig">
             <h2>Question 1</h2>
             <h2>What farm animal is this?</h2>
             <div class= "answers">
-                <div class="correct">Pig</div>
-                <div class="incorrect">Cow</div>
-                <div class="incorrect">Sheep</div>
-                <div class="incorrect">Goat</div>
+                <button class="button correct">Pig</button>
+                <button class="button incorrect">Cow</button>
+                <button class="button incorrect">Sheep</button>
+                <button class="button incorrect">Goat</button> 
+                <!-- <div class="button correct">Pig</div>
+                <div class="button incorrect">Cow</div>
+                <div class="button incorrect">Sheep</div>
+                <div class="button incorrect">Goat</div> -->
             </div>
         </div>
     </div>
@@ -32,9 +39,9 @@
         <div class="results"></div>
         <div class="playAgain">Play Again</div>
     </div>
-    <footer>
+    <!-- <footer>
         <h2>maybe links and copyright</h2>
-    </footer>
+    </footer> -->
 
 
 
