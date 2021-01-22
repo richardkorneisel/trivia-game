@@ -12,7 +12,14 @@ function toQuestions() {
     titlePage.style.display = "none";
     question[0].style.display = "block";
 }
-//for loop  refactored way
+//let button;
+//for (i=0; i<button.length; i++) {
+//  if button[i] == button[0]|| button[1]|| button[2]|| button[3]
+    // function toQuestion2() {
+    //     question[0].style.display = "none";
+    //     question[1].style.display = "block"; 
+//}
+//loop  refactored way
 //console.log(button[0])
 button[0].addEventListener("click", toQuestion2);
 button[1].addEventListener("click", toQuestion2);
