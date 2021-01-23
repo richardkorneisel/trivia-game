@@ -15,6 +15,7 @@ function toQuestions() {
    
     titlePage.style.display = "none";
     question[0].style.display = "block";
+    correctClicks = 0;
 }                                   // Some inital thought on looping code if I have time
                                     //let button;
                                     //for (i=0; i<button.length; i++) {
@@ -120,7 +121,7 @@ function totalCorrect (){
      
     for(let i=0; i<10; i++) {   // Loop through correct classes looking for button click.
         correct[i].addEventListener('click', totalCorrect)
-        scoreTotal = correctClicks+1;       // create variable scoreTotal to total correct clicks
+        scoreTotal = correctClicks;       // create variable scoreTotal to total correct clicks
        
     }
     let score = document.getElementById('score'); // Create variable and connect to HTML id score
