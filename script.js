@@ -3,24 +3,29 @@ let startGame = document.querySelector('.startGame')
 let playAgain = document.querySelector('.playAgain')
 let question = document.querySelectorAll('.question')
 let button = document.querySelectorAll('.button')
-// let correct =document.querySelectorAll('.correct')
-// let results= document.querySelector('.results')
+let correct = document.querySelectorAll('.correct')
+let results = document.querySelector('.results')
 
+let scoreTotal = 0;
+let correctClicks = 0;
+
+// Listen for start game click, hide start page load first question page.
 startGame.addEventListener("click", toQuestions);
 function toQuestions() {
    
     titlePage.style.display = "none";
     question[0].style.display = "block";
-}
-//let button;
-//for (i=0; i<button.length; i++) {
-//  if button[i] == button[0]|| button[1]|| button[2]|| button[3]
-    // function toQuestion2() {
-    //     question[0].style.display = "none";
-    //     question[1].style.display = "block"; 
-//}
-//loop  refactored way
-//console.log(button[0])
+}                                   // Some inital thought on looping code if I have time
+                                    //let button;
+                                    //for (i=0; i<button.length; i++) {
+                                    //  if button[i] == button[0]|| button[1]|| button[2]|| button[3]
+                                    // function toQuestion2() {
+                                    //     question[0].style.display = "none";
+                                    //     question[1].style.display = "block"; 
+                                    //}
+                                    //loop  refactored way
+                                    //console.log(button[0])
+// Listen to all buttons in question, move through questions to results page and restart game button
 button[0].addEventListener("click", toQuestion2);
 button[1].addEventListener("click", toQuestion2);
 button[2].addEventListener("click", toQuestion2);
@@ -103,8 +108,24 @@ function toresultsPage() {
 }
 playAgain.addEventListener("click", restart);
 function restart() {
-    question[10].style.display = "none";
+    question[10].style.display = "none";    
     titlePage.style.display = "block";
+    correctClicks = 0;  //reset correct clicks score to zero on reset
 }
-
+// Loop correct answers and add them up
+function totalCorrect (){  
+         console.log("correct");  //adds up correct answers
+         correctClicks++;
+     
+     
+    for(let i=0; i<10; i++) {   // Loop through correct classes looking for button click.
+        correct[i].addEventListener('click', totalCorrect)
+        scoreTotal = correctClicks+1;       // create variable scoreTotal to total correct clicks
+       
+    }
+    let score = document.getElementById('score'); // Create variable and connect to HTML id score
+        score.innerHTML = "You got " + scoreTotal + " right out of 10"; // Show score on final page
+        console.log(score.innerHTML)
+}
+  totalCorrect();  //Call function
 
