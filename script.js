@@ -12,7 +12,6 @@ let correctClicks = 0;
 // Listen for start game click, hide start page load first question page.
 startGame.addEventListener("click", toQuestions);
 function toQuestions() {
-   
     titlePage.style.display = "none";
     question[0].style.display = "block";
     correctClicks = 0;
@@ -32,6 +31,7 @@ button[1].addEventListener("click", toQuestion2);
 button[2].addEventListener("click", toQuestion2);
 button[3].addEventListener("click", toQuestion2);
 function toQuestion2() {
+//    sleep(2000);
    question[0].style.display = "none";
    question[1].style.display = "block";
 }
@@ -130,3 +130,11 @@ function totalCorrect (){
 }
   totalCorrect();  //Call function
 
+//   function sleep(milliseconds) {               //Timer taken from https://stackoverflow.com/questions/16873323/javascript-sleep-wait-before-continuing
+//     var start = new Date().getTime();          //Do not know how it works
+//     for (var i = 0; i < 1e7; i++) {
+//       if ((new Date().getTime() - start) > milliseconds){
+//         break;
+//       }
+//     }
+//   }

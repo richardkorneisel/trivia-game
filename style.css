@@ -4,7 +4,13 @@
 }
 * {
     font-family: 'Alfa Slab One', cursive;
-    margin: 0.25in;
+}
+
+.container {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 960px;
 }
 
 body {
@@ -68,12 +74,7 @@ h1 {
     cursor: pointer;
 }
 
-@media all and (max-width:30em){
-    .start {
-    display:block;
-    margin:0.2em auto;
-    } 
-} 
+
 .question h2 {
     font-size: 40px;
     color: orange;
@@ -101,12 +102,6 @@ h1 {
     cursor: pointer;
 }
 
-@media all and (max-width:30em){
-    .button {
-    display:block;
-    margin:0.2em auto;
-    } 
-} 
 .playAgain {
     padding:0.5em 3em;
     margin:0 0.3em 0.3em 5em;
@@ -124,10 +119,39 @@ h1 {
     background-color: orange;
     cursor: pointer;
 }
-
-@media all and (max-width:30em){
-    .playAgain {
-    display:block;
-    margin:0.2em auto;
+@media screen and (max-width:768px){
+    h1 {
+        font-size: 40px;
+    }
+    
+    .startGame {
+        display:inline-block;
+        padding:0.25em 1.5em;
+        margin:0 0.15em 0.15em 2.5em;
+        border-radius:1em;
+        font-size: 15px;
     } 
+
+    .playAgain {
+        display:inline-block;
+        padding:0.25em 1.5em;
+        margin:0 0.15em 0.15em 2.5em;
+        border-radius:1em;
+        font-size: 15px;
+    } 
+
+    .button {
+        display:inline-block;
+        padding:0.25em 1.5em;
+        margin:0 0.15em 0.15em 2.5em;
+        border-radius:1em;
+        font-size: 15px;
+    }
+    
+    img {
+        width: auto;
+        height: 150px;
+        border: 5px solid green;
+        border-radius: 20px;
+    }
 } 
