@@ -14,7 +14,7 @@
 }
 
 body {
-    background-image:url('/images/farm.jpg');
+    background-image:url('./images/farm.jpg');
     background-position: cover cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
